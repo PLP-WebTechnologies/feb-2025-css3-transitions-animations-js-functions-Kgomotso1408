@@ -1,0 +1,89 @@
+/* Smooth button hover effect */
+button {
+    transition: background-color 0.1s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: red;
+    transform: scale(1.1);
+}
+input[type="text"],
+input[type="reset"],
+textarea {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="reset"]:focus,
+textarea:focus {
+    border-color: #5cb85c;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+}
+
+input[type="text"]:hover,
+input[type="reset"]:hover,
+textarea:hover {
+    background-color: #e9ecef;
+    border-color: #5cb85c;
+}
+
+input[type="text"]
+input[type="submit"],
+textarea {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="submit"]:focus,
+textarea:focus {
+    border-color: #5cb85c;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+}
+
+input[type="text"]:hover,
+input[type="submit"]:hover,
+textarea:hover {
+    background-color: #e9ecef;
+    border-color: #5cb85c;
+}
+
+/* Table row hover effect */
+table tr:hover {
+    background-color:  #5cb85c;
+    transition: background-color 0.1s ease;
+    border-color: #5cb85c;
+}
+
+/* Fade-in animation for form elements */
+input, select, label {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
